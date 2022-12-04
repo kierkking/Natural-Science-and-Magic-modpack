@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+<lines at="topleft">
+<line> 
+<str>§b运存占用数据:</str>
+<round>
+<mul>
+<var>memused</var>
+<num>0.000000001</num>
+</mul>
+<num>1</num>
+</round>
+<str>G/</str>
+<round>
+<mul>
+<var>memtotal</var>
+<num>0.000000001</num>
+</mul>
+<num>1</num>
+</round>
+<str>G  </str>
+<round>
+<pct>
+<var>memused</var>
+<var>memtotal</var>
+</pct>
+<num>2</num>
+</round>
+<str>%</str>
+</line>
+<line>
+<str>§d世界:生物群系:{biome}  当前维度：{dimension}</str>
+</line>
+<line> <str>§dRFTools维度</str> <var>dimensionid</var> <str>: </str> <if> <var>rftdimension</var> <concat> <var>rftdimensionname</var> <str> (</str> <var>rftdimensionpower</var> <str> RF @ </str> <var>rftdimensioncost</var> <str> RF/t)</str> </concat> <var>dimension</var> </if> </line>
+<line>
+<str>§dMC世界数据:</str>
+<operation>
+<str>GE</str>
+<var>fps</var>
+<num>90</num>
+<num>60</num>
+<num>30</num>
+<num>15</num>
+<num>0</num>
+<str>§2fps高:{fps}</str>
+<str>§afps较高:{fps}</str>
+<str>§efps不错:{fps}</str>
+<str>§cfps较低:{fps}</str>
+<str>§4fps低fps:{fps}</str>
+</operation>
+<operation>
+<str>GT</str>
+<var>tps</var>
+<num>20</num>
+<num>19</num>
+<num>17</num>
+<num>15</num>
+<num>10</num>
+<num>0</num>
+<str>$bTPS: $a{tps}</str>
+<str>$bTPS: $2{tps}</str>
+<str>$bTPS: $e{tps}</str>
+<str>$bTPS: $6{tps}</str>
+<str>$bTPS: $c{tps}</str>
+<str>$bTPS: $4{tps}</str>
+</operation>
+<str>$7丨</str>
+<operation>
+<str>GT</str>
+<var>mspt</var>
+<num>75</num>
+<num>50</num>
+<num>25</num>
+<num>15</num>
+<num>10</num>
+<num>0</num>
+<str>$bMSPT: $4{mspt}</str>
+<str>$bMSPT: $c{mspt}</str>
+<str>$bMSPT: $6{mspt}</str>
+<str>$bMSPT: $e{mspt}</str>
+<str>$bMSPT: $2{mspt}</str>
+<str>$bMSPT: $a{mspt}</str>
+</operation>
+</line>
+<line>
+<str>§d光照等级:{light}</str>
+</line>
+<line>
+<str>$e周围实体$6/$c已渲染:$e{entitiestotal}$6|$c{entitiesrendered}</str>
+</line>
+<line> <str>§d当前玩家温度(体温/将要上升的体温): $e{tancurrtemp}/{tantargettemp}$f</str> </line>
+<line>
+
+      <str>§d当前季节: </str>
+
+      <var>serseason</var>
+
+</line>
+<line>
+<str>§d游戏天数:{day}  游戏时间 {mctimeh}:{mctimem}</str>
+<operation>
+<str>EQ</str>
+<var>moonphase</var>
+<num>0</num>
+<num>1</num>
+<num>2</num>
+<num>3</num>
+<num>4</num>
+<num>5</num>
+<num>6</num>
+<num>7</num>
+<str>  $b月相:$a满月</str>
+<str>  $b月相:$c亏凸月</str>
+<str>  $b月相:$d下弦月</str>
+<str>  $b月相:$e残月</str>
+<str>  $b月相:$6新月</str>
+<str>  $b月相:$9娥眉月</str>
+<str>  $b月相:$3上弦月</str>
+<str>  $b月相:$b盈凸月</str>
+</operation>
+</line>
+<line>
+<str>$c血魔法:</str>
+<str>$c当前最大 LP: </str> <var>bmcurrentlp</var> <str> ($c当前法术级别: </str> <var>bmorbtier</var> <str>)</str>
+</line>
+<line>
+<str>$d神秘时代6:</str>
+<str>$d区块Vis浓度: {thaumaura}  已污染:{thaumflux}</str>
+</line>
+<line>
+<str>          $d神智扭曲程度$d(自然/稍有偏执/吾已癫狂):$d{thaumwarpperm}/{thaumwarpnormal}/{thaumwarptemp}</str>
+</line>
+<line> <str>(未实现缺少nco)自身辐射值: </str> <var>drradiation</var> </line>
+<line>
+<str>个人坐标:</str>
+<str>坐标:[{xi},{yi},{zi}]</str>
+</line>
+</lines>
+</config>

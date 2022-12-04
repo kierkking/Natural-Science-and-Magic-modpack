@@ -1,0 +1,392 @@
+[
+  {
+    "modid": "minecraft",
+    "name": "Minecraft",
+    "version": "1.12.2"
+  },
+  {
+    "modid": "mcp",
+    "name": "Minecraft Coder Pack",
+    "version": "9.42"
+  },
+  {
+    "modid": "FML",
+    "name": "Forge Mod Loader",
+    "version": "8.0.99.99"
+  },
+  {
+    "modid": "forge",
+    "name": "Minecraft Forge",
+    "version": "14.23.5.2860"
+  },
+  {
+    "modid": "hecharacters",
+    "name": "Had Enough Characters",
+    "version": "1.12.2-1.3.0"
+  },
+  {
+    "modid": "persistency",
+    "name": "Persistency",
+    "version": "1.2.0"
+  },
+  {
+    "modid": "smoothfontcore",
+    "name": "Smooth Font Core",
+    "version": "mc1.12.2-2.1.4"
+  },
+  {
+    "modid": "mixinbooter",
+    "name": "MixinBooter",
+    "version": "7.0"
+  },
+  {
+    "modid": "bnbgamingcore",
+    "name": "BnBGamingCore",
+    "version": "0.12.0"
+  },
+  {
+    "modid": "foamfixcore",
+    "name": "FoamFixCore",
+    "version": "7.7.4"
+  },
+  {
+    "modid": "tickcentral",
+    "name": "TickCentral",
+    "version": "3.2"
+  },
+  {
+    "modid": "smoothfont",
+    "name": "Smooth Font",
+    "version": "mc1.12.2-2.1.4"
+  },
+  {
+    "modid": "addon-nepjr-gtceu",
+    "name": "NepJr\u0027s GTCEu Addon",
+    "version": "1.0-rv1"
+  },
+  {
+    "modid": "aiimprovements",
+    "name": "AI Improvements",
+    "version": "0.0.1.3"
+  },
+  {
+    "modid": "aireducer",
+    "name": "AI Reducer",
+    "version": "0.3.0"
+  },
+  {
+    "modid": "jei",
+    "name": "Had Enough Items",
+    "version": "4.24.2"
+  },
+  {
+    "modid": "base",
+    "name": "B.A.S.E",
+    "version": "3.14.0"
+  },
+  {
+    "modid": "bedbreakbegone",
+    "name": "BedBreakBegone",
+    "version": "1.0.1"
+  },
+  {
+    "modid": "betteradvancements",
+    "name": "Better Advancements",
+    "version": "0.1.0.77"
+  },
+  {
+    "modid": "betterbiomeblend",
+    "name": "Better Biome Blend",
+    "version": "1.12.2-1.1.7-forge"
+  },
+  {
+    "modid": "betterpingdisplay",
+    "name": "Better Ping Display",
+    "version": "1.0"
+  },
+  {
+    "modid": "forestry",
+    "name": "Forestry",
+    "version": "5.8.2.422"
+  },
+  {
+    "modid": "binniecore",
+    "name": "Binnie Core",
+    "version": "2.5.1.203"
+  },
+  {
+    "modid": "binniedesign",
+    "name": "Binnie\u0027s Design",
+    "version": "2.5.1.203"
+  },
+  {
+    "modid": "genetics",
+    "name": "Binnie\u0027s Genetics",
+    "version": "2.5.1.203"
+  },
+  {
+    "modid": "botany",
+    "name": "Binnie\u0027s Botany",
+    "version": "2.5.1.203"
+  },
+  {
+    "modid": "extrabees",
+    "name": "Binnie\u0027s Extra Bees",
+    "version": "2.5.1.203"
+  },
+  {
+    "modid": "extratrees",
+    "name": "Binnie\u0027s Extra Trees",
+    "version": "2.5.1.203"
+  },
+  {
+    "modid": "bnbgaminglib",
+    "name": "BNBGamingLib",
+    "version": "2.17.6"
+  },
+  {
+    "modid": "calmdownzombieguy",
+    "name": "Calm Down Zombie Guy",
+    "version": "1.0.0"
+  },
+  {
+    "modid": "chameleon",
+    "name": "Chameleon",
+    "version": "1.12-4.1.3"
+  },
+  {
+    "modid": "chunkpregenerator",
+    "name": "Chunk Pregenerator",
+    "version": "2.5.0"
+  },
+  {
+    "modid": "chunkgenlimit",
+    "name": "Chunk Generation Limiter",
+    "version": "1.1"
+  },
+  {
+    "modid": "clearwater",
+    "name": "Clear Water",
+    "version": "1.2"
+  },
+  {
+    "modid": "clumps",
+    "name": "Clumps",
+    "version": "3.1.2"
+  },
+  {
+    "modid": "codechickenlib",
+    "name": "CodeChicken Lib",
+    "version": "3.2.3.358"
+  },
+  {
+    "modid": "ctm",
+    "name": "CTM",
+    "version": "MC1.12.2-1.0.2.31"
+  },
+  {
+    "modid": "custom_iconsets",
+    "name": "Custom Iconsets",
+    "version": "0.0.1"
+  },
+  {
+    "modid": "deuf",
+    "name": "Duplicate Entity UUID Fix (DEUF)",
+    "version": "1.1-1.12.2"
+  },
+  {
+    "modid": "storagedrawers",
+    "name": "Storage Drawers",
+    "version": "5.2.2"
+  },
+  {
+    "modid": "drawerfps",
+    "name": "DrawerFPS",
+    "version": "1.12.2-1.0.0"
+  },
+  {
+    "modid": "dynview",
+    "name": "Dynamic View Mod",
+    "version": "1.3"
+  },
+  {
+    "modid": "renderlib",
+    "name": "RenderLib",
+    "version": "1.1.9"
+  },
+  {
+    "modid": "entityculling",
+    "name": "EntityCulling",
+    "version": "6.2.4"
+  },
+  {
+    "modid": "fastfurnace",
+    "name": "FastFurnace",
+    "version": "1.3.1"
+  },
+  {
+    "modid": "fastbench",
+    "name": "FastWorkbench",
+    "version": "1.7.4"
+  },
+  {
+    "modid": "findme",
+    "name": "FindMe",
+    "version": "1.1.0"
+  },
+  {
+    "modid": "foamfix",
+    "name": "FoamFix",
+    "version": "@VERSION@"
+  },
+  {
+    "modid": "ftbbackups",
+    "name": "FTB Backups",
+    "version": "1.1.0.1"
+  },
+  {
+    "modid": "ftblib",
+    "name": "FTB Library",
+    "version": "5.4.7.2"
+  },
+  {
+    "modid": "ftbutilities",
+    "name": "FTB Utilities",
+    "version": "5.4.1.131"
+  },
+  {
+    "modid": "gregtech",
+    "name": "GregTech",
+    "version": "2.4.0-gcys-alpha"
+  },
+  {
+    "modid": "gcym",
+    "name": "Gregicality Multiblocks",
+    "version": "1.1.4-gcys-alpha-v0.0.1-compat"
+  },
+  {
+    "modid": "gcys",
+    "name": "Gregicality Science",
+    "version": "0.0.1-alpha"
+  },
+  {
+    "modid": "theoneprobe",
+    "name": "The One Probe",
+    "version": "1.4.28"
+  },
+  {
+    "modid": "gregicprobe",
+    "name": "GregicProbe",
+    "version": "1.0"
+  },
+  {
+    "modid": "grimoire",
+    "name": "Grimoire",
+    "version": "3.2.10"
+  },
+  {
+    "modid": "hurtanimationremover",
+    "name": "Hurt Animation Remover",
+    "version": "1.0.0"
+  },
+  {
+    "modid": "lunatriuscore",
+    "name": "LunatriusCore",
+    "version": "1.2.0.42"
+  },
+  {
+    "modid": "ingameinfoxml",
+    "name": "InGame Info XML",
+    "version": "2.8.2.94"
+  },
+  {
+    "modid": "iseedragons",
+    "name": "ISeeDragons",
+    "version": "1.2.1"
+  },
+  {
+    "modid": "jeibees",
+    "name": "JEI Bees",
+    "version": "0.9.0.5"
+  },
+  {
+    "modid": "letmedespawn",
+    "name": "letmedespawn",
+    "version": "1.0"
+  },
+  {
+    "modid": "mechtech",
+    "name": "MechTech",
+    "version": "1.1.0-beta"
+  },
+  {
+    "modid": "modnametooltip",
+    "name": "Mod Name Tooltip",
+    "version": "1.10.1"
+  },
+  {
+    "modid": "morpheus",
+    "name": "Morpheus",
+    "version": "1.12.2-3.5.106"
+  },
+  {
+    "modid": "multithreadednoise",
+    "name": "Multithreaded Noise",
+    "version": "0.0.2"
+  },
+  {
+    "modid": "performant",
+    "name": "performant Mod",
+    "version": "1.12.2-1.5"
+  },
+  {
+    "modid": "placebo",
+    "name": "Placebo",
+    "version": "1.6.0"
+  },
+  {
+    "modid": "portalsupercache",
+    "name": "Portal Super Cache",
+    "version": "0.1"
+  },
+  {
+    "modid": "rltweaker",
+    "name": "RLTweaker",
+    "version": "0.5.3"
+  },
+  {
+    "modid": "seasonal_bees",
+    "name": "Seasonal Bees",
+    "version": "1.0"
+  },
+  {
+    "modid": "sereneseasons",
+    "name": "Serene Seasons",
+    "version": "1.2.18"
+  },
+  {
+    "modid": "serenetweaks",
+    "name": "Serene Tweaks",
+    "version": "0.0.1"
+  },
+  {
+    "modid": "surge",
+    "name": "Surge",
+    "version": "2.0.79"
+  },
+  {
+    "modid": "topextras",
+    "name": "TOP Extras",
+    "version": "1.0.1"
+  },
+  {
+    "modid": "kiwi",
+    "name": "Kiwi",
+    "version": "0.5.3.32"
+  },
+  {
+    "modid": "nimble",
+    "name": "Nimble",
+    "version": "0.0.2"
+  }
+]

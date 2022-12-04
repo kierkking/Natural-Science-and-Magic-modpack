@@ -1,0 +1,552 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  HechCore (hecharacters-1.12.2-1.3.0.jar)
+  Inventory Tweaks Coremod (InventoryTweaks-1.64+dev.151.jar)
+  RenderLibPlugin (RenderLib-1.12.2-1.1.9.jar)
+  SSLoadingPlugin (SereneSeasons-1.12.2-1.2.18-universal.jar)
+  Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+  Persistency (persistency-1.2.0.jar)
+  Born in a Barn (Born+In+A+Barn+V1.8-1.12-1.1.jar)
+  EFFLL (LiteLoader ObjectHolder fix) (ExtraFoamForLiteLoader-1.0.0.jar)
+  CorePlugin (SmoothFont-mc1.12.2-2.1.4.jar)
+  GregTechLoadingPlugin (gregtech-1.12.2-2.4.0-gcys-alpha.jar)
+  TickCentral (TickCentral-3.2.jar)
+  CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  SurgeLoadingPlugin (Surge-1.12.2-2.0.79.jar)
+  Grimoire (Grimoire-mc1.12.2-3.2.10.jar)
+  BNBGamingCore (BNBGamingCore-1.12.2-0.12.0.jar)
+  RLTweaker ASM (RLTweaker-1.12.2-0.5.3.jar)
+  EntityCullingPlugin (EntityCulling-1.12.2-6.2.4.jar)
+  MixinLoader (BedBreakBegone-1.0.1.jar)
+  ChunkGenLimiterCoremod (chunkgenlimiter-1.1-core.jar)
+  NEELoadingPlugin (NotEnoughEnergistics-1.12.2-2.0.1.jar)
+  Let Me Despawn (letmedespawn-1.12.2-forge-1.0.2.jar)
+  Better Biome Blend (betterbiomeblend-1.12.2-1.1.7-forge.jar)
+  MixinBooter (!mixinbooter-7.0.jar)
+Contact their authors BEFORE contacting forge
+
+// Who set us up the TNT?
+
+Time: 12/3/22 10:58 PM
+Description: Initializing game
+
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    nc/integration/gtce/GTCERecipeHelper.addGTCERecipe(Ljava/lang/String;Lnc/recipe/BasicRecipe;)V @803: invokevirtual
+  Reason:
+    Type 'gregtech/api/recipes/ingredients/IntCircuitIngredient' (current frame, stack[1]) is not assignable to 'net/minecraft/item/crafting/Ingredient'
+  Current Frame:
+    bci: @803
+    flags: { }
+    locals: { 'java/lang/String', 'nc/recipe/BasicRecipe', 'gregtech/api/recipes/RecipeMap', 'gregtech/api/recipes/RecipeBuilder', 'java/lang/String', integer }
+    stack: { 'gregtech/api/recipes/RecipeBuilder', 'gregtech/api/recipes/ingredients/IntCircuitIngredient' }
+  Bytecode:
+    0x0000000: 014d 014e 2a3a 0402 3605 1904 b600 20ab
+    0x0000010: 0000 01db 0000 0013 9fda b4f1 0000 0112
+    0x0000020: a775 2fbe 0000 0156 bfc2 59cd 0000 0101
+    0x0000030: ddaf 5c64 0000 00e1 e370 5e4f 0000 00a1
+    0x0000040: f0ed ce24 0000 01ab f525 9d6e 0000 0123
+    0x0000050: f5aa 26b6 0000 00d1 0ccc 1875 0000 0167
+    0x0000060: 1d32 9269 0000 0145 34b2 8a94 0000 0189
+    0x0000070: 380d e9ce 0000 01cd 3e50 e215 0000 00c1
+    0x0000080: 4e09 7ce0 0000 0134 5afa e84c 0000 01bc
+    0x0000090: 5e8b 96e0 0000 0178 6748 e2e5 0000 00b1
+    0x00000a0: 73f7 ab2c 0000 00f1 7f42 d872 0000 019a
+    0x00000b0: 1904 1228 b600 2c99 0133 0336 05a7 012d
+    0x00000c0: 1904 122e b600 2c99 0123 0436 05a7 011d
+    0x00000d0: 1904 1230 b600 2c99 0113 0536 05a7 010d
+    0x00000e0: 1904 1232 b600 2c99 0103 0636 05a7 00fd
+    0x00000f0: 1904 1234 b600 2c99 00f3 0736 05a7 00ed
+    0x0000100: 1904 1236 b600 2c99 00e3 0836 05a7 00dd
+    0x0000110: 1904 1238 b600 2c99 00d3 1006 3605 a700
+    0x0000120: cc19 0412 3ab6 002c 9900 c210 0736 05a7
+    0x0000130: 00bb 1904 123c b600 2c99 00b1 1008 3605
+    0x0000140: a700 aa19 0412 3eb6 002c 9900 a010 0936
+    0x0000150: 05a7 0099 1904 1240 b600 2c99 008f 100a
+    0x0000160: 3605 a700 8819 0412 42b6 002c 9900 7e10
+    0x0000170: 0b36 05a7 0077 1904 1244 b600 2c99 006d
+    0x0000180: 100c 3605 a700 6619 0412 46b6 002c 9900
+    0x0000190: 5c10 0d36 05a7 0055 1904 1248 b600 2c99
+    0x00001a0: 004b 100e 3605 a700 4419 0412 4ab6 002c
+    0x00001b0: 9900 3a10 0f36 05a7 0033 1904 124c b600
+    0x00001c0: 2c99 0029 1010 3605 a700 2219 0412 4eb6
+    0x00001d0: 002c 9900 1810 1136 05a7 0011 1904 1250
+    0x00001e0: b600 2c99 0007 1012 3605 1505 aa00 0000
+    0x00001f0: 0000 020e 0000 0000 0000 0012 0000 005c
+    0x0000200: 0000 0070 0000 0085 0000 0086 0000 0087
+    0x0000210: 0000 009b 0000 00af 0000 00c3 0000 00d8
+    0x0000220: 0000 00ec 0000 00ff 0000 0112 0000 0151
+    0x0000230: 0000 0176 0000 018a 0000 01af 0000 01d4
+    0x0000240: 0000 01e8 0000 01fc b200 564d 2cb6 005a
+    0x0000250: 2b10 0c10 08b8 005e 4ea7 01a1 b200 614d
+    0x0000260: 2cb6 005a 2b10 3011 00a0 b800 5e4e a701
+    0x0000270: 8cb1 b1b2 0064 4d2c b600 5a2b 1010 100a
+    0x0000280: b800 5e4e a701 76b2 0067 4d2c b600 5a2b
+    0x0000290: 101e 100a b800 5e4e a701 62b2 006a 4d2c
+    0x00002a0: b600 5a2b 1020 1010 b800 5e4e a701 4eb2
+    0x00002b0: 006d 4d2c b600 5a2b 1100 f010 14b8 005e
+    0x00002c0: 4ea7 0139 b200 704d 2cb6 005a 2b10 1e10
+    0x00002d0: 10b8 005e 4ea7 0125 b200 734d 2cb6 005a
+    0x00002e0: 2b07 1064 b800 5e4e a701 12b2 0076 4d2c
+    0x00002f0: b600 5a2b 1008 04b8 005e 4ea7 00ff 2bb8
+    0x0000300: 007a 9900 28b2 007d 4d2c b600 5a2b 1018
+    0x0000310: 100a b800 5ebb 007f 5904 bc0a 5903 034f
+    0x0000320: b700 82b6 0086 4ea7 00d3 b200 894d 2cb6
+    0x0000330: 005a 2b05 1014 b800 5e4e a700 c0b2 0067
+    0x0000340: 4d2c b600 5a2b 101e 101e b800 5ebb 007f
+    0x0000350: 5904 bc0a 5903 034f b700 82b6 0086 4ea7
+    0x0000360: 009b b200 8c4d 2cb6 005a 2b10 0810 0cb8
+    0x0000370: 005e 4ea7 0087 b200 674d 2cb6 005a 2b10
+    0x0000380: 1e10 0ab8 005e bb00 7f59 04bc 0a59 0304
+    0x0000390: 4fb7 0082 b600 864e a700 62b2 0067 4d2c
+    0x00003a0: b600 5a2b 1014 1014 b800 5ebb 007f 5904
+    0x00003b0: bc0a 5903 054f b700 82b6 0086 4ea7 003d
+    0x00003c0: b200 6a4d 2cb6 005a 2b10 1010 0cb8 005e
+    0x00003d0: 4ea7 0029 b200 8f4d 2cb6 005a 2b10 1010
+    0x00003e0: 50b8 005e 4ea7 0015 b200 564d 2cb6 005a
+    0x00003f0: 2b10 1410 0cb8 005e 4eb1 2cc6 0007 2dc7
+    0x0000400: 0004 b1bb 0091 59b7 0092 3a04 bb00 9159
+    0x0000410: b700 923a 052b b600 96b9 009c 0100 3a06
+    0x0000420: 1906 b900 a201 0099 0021 1906 b900 a601
+    0x0000430: 00c0 00a8 3a07 1904 1907 b900 ab01 00b9
+    0x0000440: 00ae 0200 57a7 ffdb 2bb6 00b1 b900 9c01
+    0x0000450: 003a 0619 06b9 00a2 0100 9900 2119 06b9
+    0x0000460: 00a6 0100 c000 b33a 0719 0519 07b9 00b4
+    0x0000470: 0100 b900 ae02 0057 a7ff db2b b600 96b9
+    0x0000480: 00b7 0100 2bb6 00b1 b900 b701 0060 3606
+    0x0000490: 1506 bc0a 3a07 1907 03b8 00bd 1506 bc0a
+    0x00004a0: 3a08 0336 0915 0919 04b9 00b7 0100 a200
+    0x00004b0: 2b19 0415 09b9 00c3 0200 c000 98b9 00b7
+    0x00004c0: 0100 0464 360a 150a 9c00 04b1 1908 1509
+    0x00004d0: 150a 4f84 0901 a7ff cf03 3609 1509 1905
+    0x00004e0: b900 b701 00a2 0033 1905 1509 b900 c302
+    0x00004f0: 00c0 0098 b900 b701 0004 6436 0a15 0a9c
+    0x0000500: 0004 b119 0815 0919 04b9 00b7 0100 6015
+    0x0000510: 0a4f 8409 01a7 ffc7 bb00 9159 b700 923a
+    0x0000520: 09b2 00c9 1909 1908 1907 1904 1905 04b6
+    0x0000530: 00cd 1909 b900 9c01 003a 0a19 0ab9 00a2
+    0x0000540: 0100 9900 2a19 0ab9 00a6 0100 c000 cf3a
+    0x0000550: 0b2c 190b b600 d2c0 0098 190b b600 d5c0
+    0x0000560: 0098 b800 d999 0004 b1a7 ffd2 bb00 9159
+    0x0000570: b700 923a 0a19 0a2d b900 ae02 0057 2bb6
+    0x0000580: 0096 b900 9c01 003a 0b19 0bb9 00a2 0100
+    0x0000590: 9901 4b19 0bb9 00a6 0100 c000 a83a 0c19
+    0x00005a0: 0cc1 00db 9900 3e19 0ab9 009c 0100 3a0d
+    0x00005b0: 190d b900 a201 0099 0028 190d b900 a601
+    0x00005c0: 00c0 0026 3a0e 190e 190c c000 dbb4 00df
+    0x00005d0: 190c c000 dbb4 00e3 b600 e757 a7ff d4a7
+    0x00005e0: 00f9 bb00 9159 b700 923a 0dbb 0091 59b7
+    0x00005f0: 0092 3a0e 190c b900 ab01 00b9 009c 0100
+    0x0000600: 3a0f 190f b900 a201 0099 00cb 190f b900
+    0x0000610: a601 00c0 00e9 3a10 1910 b600 ec99 0006
+    0x0000620: a7ff e219 10b8 00f2 3a11 1911 b900 f701
+    0x0000630: 009a 0065 190d 1911 b900 fb02 0099 0006
+    0x0000640: a7ff c219 0d19 11b9 00fe 0200 5719 0ab9
+    0x0000650: 009c 0100 3a12 1912 b900 a201 0099 0036
+    0x0000660: 1912 b900 a601 00c0 0026 3a13 190e 1913
+    0x0000670: b601 0119 11b9 0102 0100 b900 a601 00c0
+    0x0000680: 001c 1910 b601 05b6 00e7 b900 ae02 0057
+    0x0000690: a7ff c6a7 003e 190a b900 9c01 003a 1219
+    0x00006a0: 12b9 00a2 0100 9900 2b19 12b9 00a6 0100
+    0x00006b0: c000 263a 1319 0e19 13b6 0101 04bd 00e9
+    0x00006c0: 5903 1910 53b6 0109 b900 ae02 0057 a7ff
+    0x00006d0: d1a7 ff31 190e 3a0a a7fe b12c b200 76a6
+    0x00006e0: 0033 2bb8 010d 3a0b 190a b900 9c01 003a
+    0x00006f0: 0c19 0cb9 00a2 0100 9900 1a19 0cb9 00a6
+    0x0000700: 0100 c000 263a 0d19 0d19 0bb6 0110 57a7
+    0x0000710: ffe2 2bb6 00b1 b900 9c01 003a 0b19 0bb9
+    0x0000720: 00a2 0100 9900 6319 0bb9 00a6 0100 c000
+    0x0000730: b33a 0c19 0cb9 00b4 0100 b901 1101 0099
+    0x0000740: 0006 a7ff db19 0ab9 009c 0100 3a0d 190d
+    0x0000750: b900 a201 0099 002f 190d b900 a601 00c0
+    0x0000760: 0026 3a0e 190e 04bd 0113 5903 190c b900
+    0x0000770: b401 0003 b900 c302 00c0 0113 53b6 0117
+    0x0000780: 57a7 ffcd a7ff 992b b601 1ab9 009c 0100
+    0x0000790: 3a0b 190b b900 a201 0099 006c 190b b900
+    0x00007a0: a601 00c0 00a8 3a0c 190c c101 1c99 0004
+    0x00007b0: b119 0cb9 011f 0100 3a0d 190d b901 1101
+    0x00007c0: 0099 0006 a7ff ce19 0ab9 009c 0100 3a0e
+    0x00007d0: 190e b900 a201 0099 002b 190e b900 a601
+    0x00007e0: 00c0 0026 3a0f 190f 04bd 00e9 5903 190d
+    0x00007f0: 03b9 00c3 0200 c000 e953 b601 223a 0fa7
+    0x0000800: ffd1 a7ff 902b b601 25b9 009c 0100 3a0b
+    0x0000810: 190b b900 a201 0099 006b 190b b900 a601
+    0x0000820: 00c0 00b3 3a0c 190c c101 2799 0004 b119
+    0x0000830: 0cb9 0128 0100 3a0d 190d b901 1101 0099
+    0x0000840: 0006 a7ff ce19 0ab9 009c 0100 3a0e 190e
+    0x0000850: b900 a201 0099 002a 190e b900 a601 00c0
+    0x0000860: 0026 3a0f 190f 04bd 0113 5903 190d 03b9
+    0x0000870: 00c3 0200 c001 1353 b601 2b57 a7ff d2a7
+    0x0000880: ff91 0336 0b19 0ab9 009c 0100 3a0c 190c
+    0x0000890: b900 a201 0099 0034 190c b900 a601 00c0
+    0x00008a0: 0026 3a0d 190d b601 2eb9 0111 0100 9900
+    0x00008b0: 1019 0db6 0131 b901 1101 009a 000b 190d
+    0x00008c0: b601 3404 360b a7ff c815 0b99 0035 b201
+    0x00008d0: 3a99 002f b801 40bb 0142 59b7 0143 1301
+    0x00008e0: 45b6 0149 2cb4 014c b601 4913 014e b601
+    0x00008f0: 492b b801 54b6 0149 b601 58b9 015e 0200
+    0x0000900: b1                                     
+  Stackmap Table:
+    full_frame(@176,{Object[#28],Object[#34],Object[#36],Object[#38],Object[#28],Integer},{})
+    same_frame(@192)
+    same_frame(@208)
+    same_frame(@224)
+    same_frame(@240)
+    same_frame(@256)
+    same_frame(@272)
+    same_frame(@289)
+    same_frame(@306)
+    same_frame(@323)
+    same_frame(@340)
+    same_frame(@357)
+    same_frame(@374)
+    same_frame(@391)
+    same_frame(@408)
+    same_frame(@425)
+    same_frame(@442)
+    same_frame(@459)
+    same_frame(@476)
+    same_frame(@490)
+    same_frame_extended(@584)
+    same_frame(@604)
+    same_frame(@625)
+    same_frame(@626)
+    same_frame(@627)
+    same_frame(@647)
+    same_frame(@667)
+    same_frame(@687)
+    same_frame(@708)
+    same_frame(@728)
+    same_frame(@747)
+    same_frame(@766)
+    same_frame(@810)
+    same_frame(@829)
+    same_frame(@866)
+    same_frame(@886)
+    same_frame(@923)
+    same_frame(@960)
+    same_frame(@980)
+    same_frame(@1000)
+    chop_frame(@1018,2)
+    same_frame(@1026)
+    same_frame(@1027)
+    append_frame(@1056,Object[#152],Object[#152],Object[#158])
+    chop_frame(@1096,1)
+    append_frame(@1107,Object[#158])
+    chop_frame(@1147,1)
+    full_frame(@1189,{Object[#28],Object[#34],Object[#36],Object[#38],Object[#152],Object[#152],Integer,Object[#191],Object[#191],Integer},{})
+    append_frame(@1228,Integer)
+    chop_frame(@1241,2)
+    append_frame(@1244,Integer)
+    append_frame(@1283,Integer)
+    chop_frame(@1304,2)
+    append_frame(@1339,Object[#152],Object[#158])
+    same_frame(@1385)
+    chop_frame(@1388,1)
+    append_frame(@1417,Object[#152],Object[#158])
+    append_frame(@1456,Object[#168],Object[#158])
+    chop_frame(@1503,1)
+    same_frame(@1506)
+    append_frame(@1538,Object[#152],Object[#152],Object[#158])
+    append_frame(@1571,Object[#233])
+    append_frame(@1603,Object[#244])
+    append_frame(@1622,Object[#158])
+    chop_frame(@1683,1)
+    same_frame(@1686)
+    append_frame(@1695,Object[#158])
+    chop_frame(@1745,3)
+    chop_frame(@1748,1)
+    chop_frame(@1752,3)
+    chop_frame(@1755,1)
+    append_frame(@1777,Object[#7],Object[#158])
+    chop_frame(@1810,2)
+    append_frame(@1821,Object[#158])
+    append_frame(@1861,Object[#179])
+    append_frame(@1870,Object[#158])
+    chop_frame(@1924,2)
+    chop_frame(@1927,1)
+    append_frame(@1938,Object[#158])
+    append_frame(@1969,Object[#168])
+    append_frame(@1991,Object[#152])
+    append_frame(@2000,Object[#158])
+    chop_frame(@2050,3)
+    chop_frame(@2053,1)
+    append_frame(@2064,Object[#158])
+    append_frame(@2095,Object[#179])
+    append_frame(@2117,Object[#152])
+    append_frame(@2126,Object[#158])
+    chop_frame(@2175,3)
+    chop_frame(@2178,1)
+    append_frame(@2190,Integer,Object[#158])
+    append_frame(@2238,Object[#38])
+    chop_frame(@2246,1)
+    chop_frame(@2249,1)
+    same_frame(@2304)
+
+	at nc.recipe.BasicRecipeHandler.addGTCERecipes(BasicRecipeHandler.java:76)
+	at nc.recipe.NCRecipes.registerIntegrationRecipes(NCRecipes.java:131)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_869_NCRecipes_registerIntegrationRecipes_Register.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.registries.GameData.fireRegistryEvents(GameData.java:857)
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:636)
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:747)
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:336)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:535)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:378)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+(MixinBooter) Mixins in Stacktrace:
+	net.minecraftforge.registries.GameData:
+		net.darkhax.surge.mixins.minecraftforge.registries.MixinGameData (mixins.surge.json)
+	net.minecraftforge.fml.common.Loader:
+		io.github.crucible.grimoire.mc1_12_2.mixins.forge.MixinLoader (grimoire/mixins.grimoire.json)
+	net.minecraft.client.Minecraft:
+		meldexun.renderlib.mixin.MixinMinecraft (mixins.renderlib.json)
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at nc.recipe.BasicRecipeHandler.addGTCERecipes(BasicRecipeHandler.java:76)
+	at nc.recipe.NCRecipes.registerIntegrationRecipes(NCRecipes.java:131)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_869_NCRecipes_registerIntegrationRecipes_Register.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus$1.invoke(EventBus.java:144)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.registries.GameData.fireRegistryEvents(GameData.java:857)
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:636)
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:747)
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:336)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:535)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:378)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_333, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 4925129504 bytes (4696 MB) / 6912212992 bytes (6592 MB) up to 6912212992 bytes (6592 MB)
+	JVM Flags: 12 total; -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16m -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -XX:-DontCompileHugeMethods -Xmn128m -Xmx6583m -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 120 mods loaded, 120 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                           | Version                             | Source                                                           | Signature                                |
+	|:----- |:---------------------------- |:----------------------------------- |:---------------------------------------------------------------- |:---------------------------------------- |
+	| LCH   | minecraft                    | 1.12.2                              | minecraft.jar                                                    | None                                     |
+	| LCH   | mcp                          | 9.42                                | minecraft.jar                                                    | None                                     |
+	| LCH   | FML                          | 8.0.99.99                           | forge-1.12.2-14.23.5.2860.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCH   | forge                        | 14.23.5.2860                        | forge-1.12.2-14.23.5.2860.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCH   | hecharacters                 | 1.12.2-1.3.0                        | hecharacters-1.12.2-1.3.0.jar                                    | None                                     |
+	| LCH   | persistency                  | 1.2.0                               | minecraft.jar                                                    | None                                     |
+	| LCH   | smoothfontcore               | mc1.12.2-2.1.4                      | minecraft.jar                                                    | None                                     |
+	| LCH   | mixinbooter                  | 7.0                                 | minecraft.jar                                                    | None                                     |
+	| LCH   | bnbgamingcore                | 0.12.0                              | minecraft.jar                                                    | None                                     |
+	| LCH   | foamfixcore                  | 7.7.4                               | minecraft.jar                                                    | None                                     |
+	| LCH   | tickcentral                  | 3.2                                 | TickCentral-3.2.jar                                              | None                                     |
+	| LCH   | smoothfont                   | mc1.12.2-2.1.4                      | SmoothFont-mc1.12.2-2.1.4.jar                                    | None                                     |
+	| LCH   | ctm                          | MC1.12.2-1.0.2.31                   | CTM-MC1.12.2-1.0.2.31.jar                                        | None                                     |
+	| LCH   | appliedenergistics2          | rv6-stable-7-extended_life-v0.54.15 | appliedenergistics2-rv6-stable-7-extended_life-v0.54.15.jar      | None                                     |
+	| LCH   | codechickenlib               | 3.2.3.358                           | CodeChickenLib-1.12.2-3.2.3.358-universal.jar                    | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| LCH   | redstoneflux                 | 2.1.1                               | RedstoneFlux-1.12-2.1.1.1-universal.jar                          | None                                     |
+	| LCH   | brandonscore                 | 2.4.20                              | BrandonsCore-1.12.2-2.4.20.162-universal.jar                     | None                                     |
+	| LCH   | aenetvistool                 | 1.0.3                               | AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar                     | None                                     |
+	| LCH   | aiimprovements               | 0.0.1.3                             | AIImprovements-1.12-0.0.1b3.jar                                  | None                                     |
+	| LCH   | aireducer                    | 0.3.0                               | AIReducer-1.12.2-0.3.0.jar                                       | None                                     |
+	| LCH   | avaritia                     | 3.3.0                               | Avaritia-1.12.2-3.3.0.37-universal.jar                           | None                                     |
+	| LCH   | jei                          | 4.24.2                              | HadEnoughItems_1.12.2-4.24.2.jar                                 | None                                     |
+	| LCH   | base                         | 3.14.0                              | base-1.12.2-3.14.0.jar                                           | None                                     |
+	| LCH   | baubles                      | 1.5.2                               | Baubles-1.12-1.5.2.jar                                           | None                                     |
+	| LCH   | bedbreakbegone               | 1.0.1                               | BedBreakBegone-1.0.1.jar                                         | None                                     |
+	| LCH   | betteradvancements           | 0.1.0.77                            | BetterAdvancements-1.12.2-0.1.0.77.jar                           | None                                     |
+	| LCH   | betterbiomeblend             | 1.12.2-1.1.7-forge                  | betterbiomeblend-1.12.2-1.1.7-forge.jar                          | None                                     |
+	| LCH   | betterpingdisplay            | 1.0                                 | BetterPingDisplay-1.12.2-1.0.jar                                 | None                                     |
+	| LCH   | ic2                          | 2.8.221-ex112                       | industrialcraft-2-2.8.221-ex112.jar                              | de041f9f6187debbc77034a344134053277aa3b0 |
+	| LCH   | toughasnails                 | 3.1.0.141                           | ToughAsNails-1.12.2-3.1.0.141-universal.jar                      | None                                     |
+	| LCH   | forestry                     | 5.8.2.422                           | forestry_1.12.2-5.8.2.422.jar                                    | None                                     |
+	| LCH   | binniecore                   | 2.5.1.203                           | binnie-mods-1.12.2-2.5.1.203.jar                                 | None                                     |
+	| LCH   | binniedesign                 | 2.5.1.203                           | binnie-mods-1.12.2-2.5.1.203.jar                                 | None                                     |
+	| LCH   | genetics                     | 2.5.1.203                           | binnie-mods-1.12.2-2.5.1.203.jar                                 | None                                     |
+	| LCH   | botany                       | 2.5.1.203                           | binnie-mods-1.12.2-2.5.1.203.jar                                 | None                                     |
+	| LCH   | extrabees                    | 2.5.1.203                           | binnie-mods-1.12.2-2.5.1.203.jar                                 | None                                     |
+	| LCH   | extratrees                   | 2.5.1.203                           | binnie-mods-1.12.2-2.5.1.203.jar                                 | None                                     |
+	| LCH   | guideapi                     | 1.12-2.1.8-63                       | Guide-API-1.12-2.1.8-63.jar                                      | None                                     |
+	| LCH   | bloodmagic                   | 1.12.2-2.4.3-105                    | BloodMagic-1.12.2-2.4.3-105.jar                                  | None                                     |
+	| LCH   | bnbgaminglib                 | 2.17.6                              | BNBGamingLib-1.12.2-2.17.6.jar                                   | None                                     |
+	| LCH   | thaumcraft                   | 6.1.BETA26                          | Thaumcraft-1.12.2-6.1.BETA26.jar                                 | None                                     |
+	| LCH   | botania                      | r1.10-364                           | Botania r1.10-364.4.jar                                          | None                                     |
+	| LCH   | calmdownzombieguy            | 1.0.0                               | CalmDownZombieGuy-1.12.2-1.0.0.jar                               | None                                     |
+	| LCH   | chameleon                    | 1.12-4.1.3                          | Chameleon-1.12-4.1.3.jar                                         | None                                     |
+	| LCH   | chunkpregenerator            | 2.5.0                               | Chunk+Pregenerator-V1.12-2.5.7.jar                               | None                                     |
+	| LCH   | chunkgenlimit                | 1.1                                 | chunkgenlimiter-1.1.jar                                          | None                                     |
+	| LCH   | clearwater                   | 1.2                                 | clearwater-1.2.jar                                               | None                                     |
+	| LCH   | clumps                       | 3.1.2                               | Clumps-3.1.2.jar                                                 | None                                     |
+	| LCH   | cofhcore                     | 4.6.6                               | CoFHCore-1.12.2-4.6.6.1-universal.jar                            | None                                     |
+	| LCH   | controlling                  | 3.0.10                              | Controlling-3.0.10.jar                                           | None                                     |
+	| LCH   | custom_iconsets              | 0.0.1                               | CustomIconsets-1.12.2-0.0.1.jar                                  | None                                     |
+	| LCH   | customoregen                 | 1.12                                | CustomOreGen-1.12-1.8.1.jar                                      | None                                     |
+	| LCH   | deuf                         | 1.1-1.12.2                          | deuf-1.1-1.12.2.jar                                              | None                                     |
+	| LCH   | draconicevolution            | 2.3.28                              | Draconic-Evolution-1.12.2-2.3.28.354-universal.jar               | None                                     |
+	| LCH   | storagedrawers               | 5.2.2                               | StorageDrawers-1.12.2-5.4.2.jar                                  | None                                     |
+	| LCH   | drawerfps                    | 1.12.2-1.0.0                        | DrawerFPS-1.12.2-1.0.0.jar                                       | None                                     |
+	| LCH   | dynview                      | 1.3                                 | dynviewdist-1.12-1.3.jar                                         | None                                     |
+	| LCH   | emt                          | 12.2.0                              | emt-12.2.0.jar                                                   | None                                     |
+	| LCH   | renderlib                    | 1.1.9                               | RenderLib-1.12.2-1.1.9.jar                                       | None                                     |
+	| LCH   | entityculling                | 6.2.4                               | EntityCulling-1.12.2-6.2.4.jar                                   | None                                     |
+	| LCH   | fastfurnace                  | 1.3.1                               | FastFurnace-1.12.2-1.3.1.jar                                     | None                                     |
+	| LCH   | fastbench                    | 1.7.4                               | FastWorkbench-1.12.2-1.7.4.jar                                   | None                                     |
+	| LCH   | findme                       | 1.1.0                               | findme-1.12.2-1.1.0-8.jar                                        | None                                     |
+	| LCH   | foamfix                      | @VERSION@                           | foamfix-0.10.15-1.12.2.jar                                       | None                                     |
+	| LCH   | ftbbackups                   | 1.1.0.1                             | FTBBackups-1.1.0.1.jar                                           | None                                     |
+	| LCH   | ftblib                       | 5.4.7.2                             | FTBLib-5.4.7.2.jar                                               | None                                     |
+	| LCH   | ftbutilities                 | 5.4.1.131                           | FTBUtilities-5.4.1.131.jar                                       | None                                     |
+	| LCH   | gregtech                     | 2.4.0-gcys-alpha                    | gregtech-1.12.2-2.4.0-gcys-alpha.jar                             | None                                     |
+	| LCH   | gcym                         | 1.1.4-gcys-alpha-v0.0.1-compat      | GregicalityMultiblocks-1.12.2-1.1.4-gcys-alpha-v0.0.1-compat.jar | None                                     |
+	| LCH   | gcys                         | 0.0.1-alpha                         | GregicalityScience-1.12.2-0.0.1-alpha.jar                        | None                                     |
+	| LCH   | theoneprobe                  | 1.4.28                              | theoneprobe-1.12-1.4.28.jar                                      | None                                     |
+	| LCH   | gregicprobe                  | 1.0                                 | GregicProbe-1.1.jar                                              | None                                     |
+	| LCH   | grimoire                     | 3.2.10                              | Grimoire-mc1.12.2-3.2.10.jar                                     | None                                     |
+	| LCH   | gbook                        | 2.9.5                               | Guidebook-1.12.2-2.9.5.jar                                       | None                                     |
+	| LCH   | hurtanimationremover         | 1.0.0                               | HurtAnimationRemover-1.12.2-1.0.0.jar                            | None                                     |
+	| LCH   | i18nmod                      | 1.12.2-1.1.0                        | i18nupdatemod-1.12.2-1.1.0.jar                                   | None                                     |
+	| LCH   | igi|bloodmagicintegration    | 1.2                                 | IGI-BloodMagic-1.2.jar                                           | None                                     |
+	| LCH   | igi|deepresonanceintegration | 1.1                                 | IGI-DeepResonance-1.1.jar                                        | None                                     |
+	| LCH   | igi|rftoolsintegration       | 1.2                                 | IGI-RFTools-1.2.jar                                              | None                                     |
+	| LCH   | igi|thaumcraft               | 1.0a                                | IGI-Thaumcraft-1.0a.jar                                          | None                                     |
+	| LCH   | igi|toughasnails             | 1.3                                 | IGI-ToughAsNails-1.3.jar                                         | None                                     |
+	| LCH   | igiextended                  | 1.1                                 | IGIExtended-1.12.2-1.1.jar                                       | None                                     |
+	| LCH   | lunatriuscore                | 1.2.0.42                            | LunatriusCore-1.12.2-1.2.0.42-universal.jar                      | None                                     |
+	| LCH   | ingameinfoxml                | 2.8.2.94                            | InGameInfoXML-1.12.2-2.8.2.94-universal.jar                      | None                                     |
+	| LCH   | sereneseasons                | 1.2.18                              | SereneSeasons-1.12.2-1.2.18-universal.jar                        | None                                     |
+	| LCH   | igisereneseasons             | 1.0.0.1                             | igisereneseasons-1.0.0.1.jar                                     | None                                     |
+	| LCH   | igi|sereneseasons            | 1.0                                 | IGISereneSeasons.jar                                             | None                                     |
+	| LCH   | placebo                      | 1.6.0                               | Placebo-1.12.2-1.6.0.jar                                         | None                                     |
+	| LCH   | industrialupgrade            | 2.3.5                               | IndustrialUpgrade-1.12.2-2.3.5.jar                               | None                                     |
+	| LCH   | inventorytweaks              | 1.64+dev.151.822d839                | InventoryTweaks-1.64+dev.151.jar                                 | 55d2cd4f5f0961410bf7b91ef6c6bf00a766dcbe |
+	| LCH   | iseedragons                  | 1.2.1                               | ISeeDragons-1.2.1.jar                                            | None                                     |
+	| LCH   | jeibees                      | 0.9.0.5                             | jeibees-0.9.0.5-mc1.12.2.jar                                     | None                                     |
+	| LCH   | letmedespawn                 | 1.0                                 | letmedespawn-1.12.2-forge-1.0.2.jar                              | None                                     |
+	| LCH   | loadedmodsexporter           | 1.12.2-1.0                          | loadedmodsexporter-1.12.2-1.0.jar                                | None                                     |
+	| LCH   | mcjtylib_ng                  | 3.5.4                               | mcjtylib-1.12-3.5.4.jar                                          | None                                     |
+	| LCH   | mechtech                     | 1.1.0-beta                          | mechtech-1.1.0-beta.jar                                          | None                                     |
+	| LCH   | modnametooltip               | 1.10.1                              | modnametooltip_1.12.2-1.10.1.jar                                 | None                                     |
+	| LCH   | morpheus                     | 1.12.2-3.5.106                      | Morpheus-1.12.2-3.5.106.jar                                      | None                                     |
+	| LCH   | mousetweaks                  | 2.10.1                              | MouseTweaks-2.10.1-mc1.12.2.jar                                  | None                                     |
+	| LCH   | multithreadednoise           | 0.0.2                               | MultithreadedNoise-1.12.2-0.0.2.jar                              | None                                     |
+	| LCH   | neenergistics                | 2.0.1                               | NotEnoughEnergistics-1.12.2-2.0.1.jar                            | None                                     |
+	| LCH   | harvestcraft                 | 1.12.2zb                            | Pam's HarvestCraft 1.12.2zg.jar                                  | None                                     |
+	| LCH   | quantum_generators           | 1.1                                 | Quantum+Generators.jar                                           | None                                     |
+	| LCH   | simplyquarries               | 1.3                                 | Simply+Quarries.jar                                              | None                                     |
+	| LCH   | nuclearcraft                 | 2o.6.2                              | NuclearCraft-2o.6.2-1.12.2.jar                                   | None                                     |
+	| LCH   | patchouli                    | 1.0-23.6                            | Patchouli-1.0-23.6.jar                                           | None                                     |
+	| LCH   | performant                   | 1.12.2-1.5                          | performant-1.11.jar                                              | None                                     |
+	| LCH   | portalsupercache             | 0.1                                 | portalsupercache-0.2.jar                                         | None                                     |
+	| LCH   | rftools                      | 7.73                                | rftools-1.12-7.73.jar                                            | None                                     |
+	| LCH   | rftoolsdim                   | 5.71                                | rftoolsdim-1.12-5.71.jar                                         | None                                     |
+	| LCH   | rltweaker                    | 0.5.3                               | RLTweaker-1.12.2-0.5.3.jar                                       | None                                     |
+	| LCH   | seasonal_bees                | 1.0                                 | SeasonalBees-[1.12]--1.0.jar                                     | None                                     |
+	| LCH   | serenetweaks                 | 0.0.1                               | SereneTweaks-1.0.jar                                             | None                                     |
+	| LCH   | surge                        | 2.0.79                              | Surge-1.12.2-2.0.79.jar                                          | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LCH   | thaumicspeedup               | 4.0                                 | thaumicspeedup-4.0.jar                                           | None                                     |
+	| LCH   | thaumictinkerer              | 1.12.2-5.0-620a0c5                  | thaumictinkerer-1.12.2-5.0-620a0c5.jar                           | None                                     |
+	| LCH   | topextras                    | 1.0.1                               | topextras-1.12.2-1.0.1.jar                                       | None                                     |
+	| LCH   | wirelessutils                | 1.10                                | wirelessutils-1.12.2-1.10.136-universal.jar                      | None                                     |
+	| LCH   | kiwi                         | 0.5.3.32                            | Kiwi-1.12.2-0.5.3.32.jar                                         | None                                     |
+	| LCH   | nimble                       | 0.0.2                               | Nimble-0.0.2.jar                                                 | None                                     |
+
+	Loaded coremods (and transformers): 
+HechCore (hecharacters-1.12.2-1.3.0.jar)
+  me.towdium.hecharacters.core.HechClassTransformer
+Inventory Tweaks Coremod (InventoryTweaks-1.64+dev.151.jar)
+  invtweaks.forge.asm.ContainerTransformer
+RenderLibPlugin (RenderLib-1.12.2-1.1.9.jar)
+  meldexun.renderlib.asm.RenderLibClassTransformer
+SSLoadingPlugin (SereneSeasons-1.12.2-1.2.18-universal.jar)
+  sereneseasons.asm.transformer.EntityRendererTransformer
+  sereneseasons.asm.transformer.WorldTransformer
+Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+  pl.asie.foamfix.coremod.FoamFixTransformer
+Persistency (persistency-1.2.0.jar)
+  zone.rong.persistency.Persistency$ClientTransformer
+Born in a Barn (Born+In+A+Barn+V1.8-1.12-1.1.jar)
+  com.chocohead.biab.BornInABarn
+EFFLL (LiteLoader ObjectHolder fix) (ExtraFoamForLiteLoader-1.0.0.jar)
+  pl.asie.extrafoamforliteloader.EFFLLTransformer
+CorePlugin (SmoothFont-mc1.12.2-2.1.4.jar)
+  bre.smoothfont.asm.Transformer
+GregTechLoadingPlugin (gregtech-1.12.2-2.4.0-gcys-alpha.jar)
+  gregtech.core.GregTechTransformer
+TickCentral (TickCentral-3.2.jar)
+  com.github.terminatornl.tickcentral.asm.BlockTransformer
+  com.github.terminatornl.tickcentral.asm.ITickableTransformer
+  com.github.terminatornl.tickcentral.asm.EntityTransformer
+  com.github.terminatornl.tickcentral.asm.HubAPITransformer
+CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+SurgeLoadingPlugin (Surge-1.12.2-2.0.79.jar)
+  
+Grimoire (Grimoire-mc1.12.2-3.2.10.jar)
+  
+BNBGamingCore (BNBGamingCore-1.12.2-0.12.0.jar)
+  com.bloodnbonesgaming.bnbgamingcore.core.BNBGamingCoreClassTransformer
+RLTweaker ASM (RLTweaker-1.12.2-0.5.3.jar)
+  com.charles445.rltweaker.asm.RLTweakerASM
+EntityCullingPlugin (EntityCulling-1.12.2-6.2.4.jar)
+  meldexun.entityculling.asm.EntityCullingClassTransformer
+MixinLoader (BedBreakBegone-1.0.1.jar)
+  
+ChunkGenLimiterCoremod (chunkgenlimiter-1.1-core.jar)
+  io.github.barteks2x.chunkgenlimiter.coremod.ChunkGenLimitTransformer
+NEELoadingPlugin (NotEnoughEnergistics-1.12.2-2.0.1.jar)
+  com.github.vfyjxf.nee.asm.NEEClassTransformer
+Let Me Despawn (letmedespawn-1.12.2-forge-1.0.2.jar)
+  
+Better Biome Blend (betterbiomeblend-1.12.2-1.1.7-forge.jar)
+  
+MixinBooter (!mixinbooter-7.0.jar)
+  
+	GL info: ' Vendor: 'Intel' Version: '4.6.0 - Build 30.0.100.9955' Renderer: 'Intel(R) HD Graphics Gen11'
+	AE2 Version: stable rv6-stable-7-extended_life-v0.54.15 for Forge 14.23.5.2847
+	Patchouli open book context: n/a
+	RLTweaker Error Report: 
+ 
+	Launched Version: gtgt
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) HD Graphics Gen11 GL version 4.6.0 - Build 30.0.100.9955, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: Minecraft-Mod-Language-Modpack.zip
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Celeron(R) N5095 @ 2.00GHz
